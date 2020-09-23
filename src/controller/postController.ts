@@ -24,10 +24,17 @@ export const createPost = async (req: Request, res: Response) => {
 
 export const getAllPosts = async (req: Request, res: Response) => {
   await prisma.post.findMany({
-    include:{ author:true },
+
+    include: { author: true },
   })
-   .then((fetched) => {
-     res.status(200).json(fetched);
+   .then((post) => {
+
+     if (post) {
+        res.status(200).json(post);
+      } else {
+        res.sendStatus(400).send('Post not Available');
+      }
+
    })
 .catch((err) => {
   res.status(500).json(err);

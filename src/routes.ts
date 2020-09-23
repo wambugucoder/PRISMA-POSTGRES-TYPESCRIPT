@@ -10,6 +10,6 @@ router.get('/users', getUser);
 
 // Post Controller
 router.post('/post', createPost);
-router.get('/post',getAllPosts);
+router.get('/post', getAllPosts);
 
 export default router;
