@@ -1,3 +1,3 @@
 # PRISMA-POSTGRES-TYPESCRIPT
 
-A simple crud Application created using
+A simple crud Application created using Typescript 
