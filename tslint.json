@@ -1,3 +1,4 @@
+//AIRBNB'S LINTING RULES
 {
     "defaultSeverity": "error",
     "extends": [
