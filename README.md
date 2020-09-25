@@ -4,6 +4,8 @@
 
 A simple crud Application created using Typescript and Prisma
 
+Just started doing integrations tests
+
 
 
 ## WHAT IS PRISMA?
