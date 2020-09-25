@@ -44,8 +44,10 @@ export const getAllPosts = async (req: Request, res: Response) => {
 
 export const updatePost = async (req: Request, res: Response) => {
 
+  const postId = parseInt(req.params.id, 10);
+
   await prisma.post.update({
-    where: { id: 1 },
+    where: { id: postId },
     data: { published: true },
 
   }).then((updated) => { res.sendStatus(200).send('Post has been updated'); })
@@ -55,6 +57,20 @@ export const updatePost = async (req: Request, res: Response) => {
 };
 
 export const deletePost =  async (req: Request, res: Response) => {
-  
+  const postId = parseInt(req.params.id, 10);
 
-}
+  await prisma.post.delete({
+    where:{ id:postId },
+  })
+    .then((deleted) => {
+      if (deleted) {
+        res.sendStatus(200).send('User Deleted');
+      } else {
+        res.sendStatus(400).send('User Not found');
+      }
+    })
+    .catch((err) => {
+      res.sendStatus(500).send(err);
+    });
+
+};
