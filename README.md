@@ -1,5 +1,7 @@
 # PRISMA-POSTGRES-TYPESCRIPT
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4c223b9cdac84e23990217125eedefe9)](https://app.codacy.com/manual/josphatwambugu77/PRISMA-POSTGRES-TYPESCRIPT?utm_source=github.com&utm_medium=referral&utm_content=wambugucoder/PRISMA-POSTGRES-TYPESCRIPT&utm_campaign=Badge_Grade_Settings)
+
 A simple crud Application created using Typescript and Prisma
 
 
