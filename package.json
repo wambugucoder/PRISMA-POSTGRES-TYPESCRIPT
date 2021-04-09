@@ -7,7 +7,6 @@
     "start": "ts-node src/index.ts",
     "dev": "tsnd --respawn src/index.ts",
     "test": "mocha --exit --recursive --timeout 55000 -r ts-node/register tests/**/*.spec.ts"
-   
   },
   "keywords": [
     "prisma",
@@ -20,7 +19,7 @@
   "author": "Jos Wambugu",
   "license": "ISC",
   "devDependencies": {
-    "@prisma/cli": "^2.7.1",
+    "@prisma/cli": "^2.20.0",
     "@types/body-parser": "^1.19.0",
     "@types/chai": "^4.2.12",
     "@types/chai-http": "^4.2.0",
