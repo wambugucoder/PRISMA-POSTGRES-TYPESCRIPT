@@ -7,7 +7,6 @@
     "start": "ts-node src/index.ts",
     "dev": "tsnd --respawn src/index.ts",
     "test": "mocha --exit --recursive --timeout 55000 -r ts-node/register tests/**/*.spec.ts"
-   
   },
   "keywords": [
     "prisma",
