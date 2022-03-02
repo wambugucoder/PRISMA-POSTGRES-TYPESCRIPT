@@ -20,7 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "@prisma/cli": "2.20.1",
-    "@types/body-parser": "1.19.0",
+    "@types/body-parser": "1.19.2",
     "@types/chai": "4.2.12",
     "@types/chai-http": "4.2.0",
     "@types/dotenv": "8.2.0",
